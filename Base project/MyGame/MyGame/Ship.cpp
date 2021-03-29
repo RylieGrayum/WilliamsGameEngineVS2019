@@ -41,7 +41,7 @@ void Ship::update(sf::Time& elapsed) {
 		sf::FloatRect bounds = sprite_.getGlobalBounds();
 
 		// Top Laser
-		float laserXtop = x + (bounds.width / 2);
+		float laserXtop = x + (bounds.width / 2.0f);
 		float laserYtop = y + 0;
 
 		// Middle Laser
