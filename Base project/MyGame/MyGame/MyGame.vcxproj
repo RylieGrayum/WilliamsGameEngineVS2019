@@ -82,6 +82,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Background.cpp" />
     <ClCompile Include="Engine\AnimatedSprite.cpp" />
     <ClCompile Include="Engine\Game.cpp" />
     <ClCompile Include="Engine\GameObject.cpp" />
@@ -99,6 +100,7 @@
     <ClCompile Include="Ship.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Background.h" />
     <ClInclude Include="Engine\AnimatedSprite.h" />
     <ClInclude Include="Engine\Game.h" />
     <ClInclude Include="Engine\GameEngine.h" />
@@ -122,6 +124,7 @@
     <Image Include="..\..\..\Art\explosion-spritesheet.png" />
     <Image Include="..\..\..\Art\laser.png" />
     <Image Include="..\..\..\Art\meteor.png" />
+    <Image Include="Resources\background.png" />
     <Image Include="Resources\ship.png" />
   </ItemGroup>
   <ItemGroup>

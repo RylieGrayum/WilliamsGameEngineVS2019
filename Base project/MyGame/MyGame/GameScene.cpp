@@ -4,9 +4,18 @@
 #include "Score.h"
 #include "GameOverScene.h"
 #include "GoodLuckMessage.h"
+#include "Background.h"
 
 GameScene::GameScene()
 {
+
+	// Create background here.
+	BackgroundPtr background1 = std::make_shared<Background>(sf::Vector2f(0.0f, 0.0f));
+	addGameObject(background1);
+
+	BackgroundPtr background2 = std::make_shared<Background>(sf::Vector2f(WINDOW_WIDTH, 0.0f));
+	addGameObject(background2);
+
 	ShipPtr ship = std::make_shared<Ship>();
 	addGameObject(ship);
 
