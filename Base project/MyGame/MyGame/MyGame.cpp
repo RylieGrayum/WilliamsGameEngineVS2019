@@ -2,7 +2,7 @@
 #include "GameScene.h"
 
 
-const std::string WINDOW_TITLE = "Rylie's Awesome Game";
+const std::string WINDOW_TITLE = "Rylie's Awesome Drive Game";
 
 int main()
 {
