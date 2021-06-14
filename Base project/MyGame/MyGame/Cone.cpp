@@ -3,11 +3,11 @@
 #include "GameScene.h"
 
 
-const float SPEED = 0.25f;
+const float SPEED = 0.25f; // Speed is same as road so they look fixed to the road.
 
 Cone::Cone(sf::Vector2f pos)
 {
-	sprite_.setTexture(GAME.getTexture("Resources/cone3.png"));
+	sprite_.setTexture(GAME.getTexture("Resources/cone3.png")); // Changed picture.
 	sprite_.setPosition(pos);
 	assignTag("cone");
 	setCollisionCheckEnabled(true);
@@ -21,7 +21,7 @@ void Cone::draw()
 void Cone::update(sf::Time& elapsed) {
 	int msElapsed = elapsed.asMilliseconds();
 	sf::Vector2f pos = sprite_.getPosition();
-	sprite_.setPosition(sf::Vector2f(pos.x, pos.y + SPEED * msElapsed));
+	sprite_.setPosition(sf::Vector2f(pos.x, pos.y + SPEED * msElapsed)); // Makes the cones fall vertically.
 }
 
 void Cone::handleCollision(GameObject& otherGameObject)

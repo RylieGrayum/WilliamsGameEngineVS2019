@@ -5,7 +5,7 @@
 class Car : public GameObject
 {
 public:
-	// Creates our ship.
+	// Creates our car.
 	Car();
 
 	// Functions overridden from GameObject:

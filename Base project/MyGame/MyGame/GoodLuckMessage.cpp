@@ -8,8 +8,8 @@ GoodLuck::GoodLuck(sf::Vector2f pos)
 	text_.setPosition(pos);
 	text_.setCharacterSize(100);
 #pragma warning(suppress : 4996)
-	text_.setColor(sf::Color::Blue);
-	assignTag("goodluck");
+	text_.setColor(sf::Color::Red);
+	assignTag("Let's Drive!");
 }
 
 void GoodLuck::draw()

@@ -2,13 +2,13 @@
 #include "GameScene.h"
 
 const float SPEED = 0.25f;
-const float GAP = 165.0f;
+const float GAP = 165.0f; // this gap is needed to push the road to the center of the screen.
 
 Background::Background(sf::Vector2f pos)
 {
 	initial_y = pos.y;
 	pos.x = GAP;
-	sprite_.setTexture(GAME.getTexture("Resources/roadpicture.jpg"));
+	sprite_.setTexture(GAME.getTexture("Resources/roadpicture.jpg")); // Use the road picture as the background
 	sprite_.setPosition(pos);
 }
 
@@ -28,6 +28,7 @@ void Background::update(sf::Time& elapsed) {
 	}
 	else
 	{
+		// Reposition the road to scroll vertically.
 		sprite_.setPosition(sf::Vector2f(pos.x, pos.y + SPEED * msElapsed));
 	}
 }

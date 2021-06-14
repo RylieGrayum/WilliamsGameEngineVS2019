@@ -6,8 +6,8 @@ const int FIRE_DELAY = 200;
 
 Car::Car()
 {
-	sprite_.setTexture(GAME.getTexture("Resources/redcaredited.png"));
-	sprite_.setPosition(sf::Vector2f(340, 300));
+	sprite_.setTexture(GAME.getTexture("Resources/redcaredited.png")); // Use the car picture.
+	sprite_.setPosition(sf::Vector2f(340, 300)); // Position the car to the bottom center.
 }
 
 void Car::draw()
@@ -15,6 +15,7 @@ void Car::draw()
 	GAME.getRenderWindow().draw(sprite_);
 }
 
+// Previous "ship" code worked for the car.
 void Car::update(sf::Time& elapsed) {
 	sf::Vector2f pos = sprite_.getPosition();
 	float x = pos.x;
