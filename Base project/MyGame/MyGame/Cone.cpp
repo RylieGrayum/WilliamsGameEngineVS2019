@@ -1,41 +1,30 @@
-#include "Meteor.h"
+#include "Cone.h"
 #include "Explosion.h"
 #include "GameScene.h"
 
 
 const float SPEED = 0.25f;
 
-Meteor::Meteor(sf::Vector2f pos)
+Cone::Cone(sf::Vector2f pos)
 {
-	sprite_.setTexture(GAME.getTexture("Resources/meteor.png"));
+	sprite_.setTexture(GAME.getTexture("Resources/cone3.png"));
 	sprite_.setPosition(pos);
-	assignTag("meteor");
+	assignTag("cone");
 	setCollisionCheckEnabled(true);
 }
 
-void Meteor::draw()
+void Cone::draw()
 {
 	GAME.getRenderWindow().draw(sprite_);
 }
 
-void Meteor::update(sf::Time& elapsed) {
+void Cone::update(sf::Time& elapsed) {
 	int msElapsed = elapsed.asMilliseconds();
 	sf::Vector2f pos = sprite_.getPosition();
-
-	if (pos.x < sprite_.getGlobalBounds().width * -1)
-	{
-		GameScene& scene = (GameScene&)GAME.getCurrentScene();
-		scene.decreaseLives();
-
-		makeDead();
-	}
-	else
-	{
-		sprite_.setPosition(sf::Vector2f(pos.x - SPEED * msElapsed, pos.y));
-	}
+	sprite_.setPosition(sf::Vector2f(pos.x, pos.y + SPEED * msElapsed));
 }
 
-void Meteor::handleCollision(GameObject& otherGameObject)
+void Cone::handleCollision(GameObject& otherGameObject)
 {
 	if (otherGameObject.hasTag("laser"))
 	{
@@ -55,7 +44,7 @@ void Meteor::handleCollision(GameObject& otherGameObject)
 	makeDead();
 }
 
-sf::FloatRect Meteor::getCollisionRect()
+sf::FloatRect Cone::getCollisionRect()
 {
 	return sprite_.getGlobalBounds();
 }

@@ -1,9 +1,9 @@
 #pragma once
 
 #include "Engine/GameEngine.h"
-#include "Meteor.h"
+#include "Cone.h"
 
-class MeteorSpawner : public GameObject
+class ConeSpawner : public GameObject
 {
 public:
 	void update(sf::Time& elapsed);
@@ -11,4 +11,4 @@ private:
 	int timer_ = 0;
 };
 
-typedef std::shared_ptr<MeteorSpawner> MeteorSpawnerPtr;
+typedef std::shared_ptr<ConeSpawner> ConeSpawnerPtr;

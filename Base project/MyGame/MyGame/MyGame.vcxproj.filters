@@ -15,16 +15,16 @@
     </ClCompile>
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="GameScene.cpp" />
-    <ClCompile Include="Ship.cpp" />
     <ClCompile Include="Laser.cpp" />
-    <ClCompile Include="Meteor.cpp" />
-    <ClCompile Include="MeteorSpawner.cpp" />
     <ClCompile Include="Explosion.cpp" />
     <ClCompile Include="Score.cpp" />
     <ClCompile Include="GameOverMessage.cpp" />
     <ClCompile Include="GameOverScene.cpp" />
     <ClCompile Include="GoodLuckMessage.cpp" />
     <ClCompile Include="Background.cpp" />
+    <ClCompile Include="Car.cpp" />
+    <ClCompile Include="Cone.cpp" />
+    <ClCompile Include="ConeSpawner.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\AnimatedSprite.h">
@@ -43,16 +43,16 @@
       <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="GameScene.h" />
-    <ClInclude Include="Ship.h" />
     <ClInclude Include="Laser.h" />
-    <ClInclude Include="Meteor.h" />
-    <ClInclude Include="MeteorSpawner.h" />
     <ClInclude Include="Explosion.h" />
     <ClInclude Include="Score.h" />
     <ClInclude Include="GameOverMessage.h" />
     <ClInclude Include="GameOverScene.h" />
     <ClInclude Include="GoodLuckMessage.h" />
     <ClInclude Include="Background.h" />
+    <ClInclude Include="Car.h" />
+    <ClInclude Include="Cone.h" />
+    <ClInclude Include="ConeSpawner.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Engine">
@@ -83,6 +83,24 @@
     <Image Include="Resources\background.png">
       <Filter>Resources</Filter>
     </Image>
+    <Image Include="Resources\explosion01.png" />
+    <Image Include="Resources\explosion02.png" />
+    <Image Include="Resources\explosion03.png" />
+    <Image Include="Resources\explosion04.png" />
+    <Image Include="Resources\explosion05.png" />
+    <Image Include="Resources\explosion06.png" />
+    <Image Include="Resources\explosion07.png" />
+    <Image Include="Resources\explosion08.png" />
+    <Image Include="Resources\explosion09.png" />
+    <Image Include="Resources\explosion-spritesheet.png" />
+    <Image Include="Resources\laser.png" />
+    <Image Include="Resources\meteor.png" />
+    <Image Include="Resources\purplecar.png" />
+    <Image Include="Resources\redcar.png" />
+    <Image Include="Resources\roadpicture.jpg" />
+    <Image Include="Resources\yellowcar.png" />
+    <Image Include="Resources\redcar.jpg" />
+    <Image Include="Resources\cone3.png" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="Resources\boom.wav">

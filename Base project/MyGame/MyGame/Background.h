@@ -14,7 +14,7 @@ public:
 private:
 	sf::Sprite sprite_;
 
-	float initial_x;
+	float initial_y;
 };
 
 typedef std::shared_ptr<Background> BackgroundPtr;

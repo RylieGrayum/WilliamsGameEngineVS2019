@@ -2,11 +2,11 @@
 
 #include "Engine/GameEngine.h"
 
-class Ship : public GameObject
+class Car : public GameObject
 {
 public:
 	// Creates our ship.
-	Ship();
+	Car();
 
 	// Functions overridden from GameObject:
 	void draw();
@@ -16,4 +16,4 @@ private:
 	int fireTimer_ = 0;
 };
 
-typedef std::shared_ptr<Ship> ShipPtr;
+typedef std::shared_ptr<Car> CarPtr;

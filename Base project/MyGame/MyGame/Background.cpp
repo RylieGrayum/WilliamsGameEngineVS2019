@@ -1,12 +1,14 @@
 #include "Background.h"
 #include "GameScene.h"
 
-const float SPEED = 0.10f;
+const float SPEED = 0.25f;
+const float GAP = 165.0f;
 
 Background::Background(sf::Vector2f pos)
 {
-	initial_x = pos.x;
-	sprite_.setTexture(GAME.getTexture("Resources/background.png"));
+	initial_y = pos.y;
+	pos.x = GAP;
+	sprite_.setTexture(GAME.getTexture("Resources/roadpicture.jpg"));
 	sprite_.setPosition(pos);
 }
 
@@ -20,12 +22,12 @@ void Background::update(sf::Time& elapsed) {
 	int msElapsed = elapsed.asMilliseconds();
 	sf::Vector2f pos = sprite_.getPosition();
 
-	if (pos.x + WINDOW_WIDTH < initial_x)
+	if (pos.y - WINDOW_HEIGHT > initial_y)
 	{
-		sprite_.setPosition(initial_x, 0.0f);
+		sprite_.setPosition(GAP, initial_y);
 	}
 	else
 	{
-		sprite_.setPosition(sf::Vector2f(pos.x - SPEED * msElapsed, pos.y));
+		sprite_.setPosition(sf::Vector2f(pos.x, pos.y + SPEED * msElapsed));
 	}
 }

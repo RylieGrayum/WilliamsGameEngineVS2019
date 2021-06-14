@@ -93,11 +93,11 @@
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="GoodLuckMessage.cpp" />
     <ClCompile Include="Laser.cpp" />
-    <ClCompile Include="Meteor.cpp" />
-    <ClCompile Include="MeteorSpawner.cpp" />
+    <ClCompile Include="Cone.cpp" />
+    <ClCompile Include="ConeSpawner.cpp" />
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="Score.cpp" />
-    <ClCompile Include="Ship.cpp" />
+    <ClCompile Include="Car.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Background.h" />
@@ -112,10 +112,10 @@
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="GoodLuckMessage.h" />
     <ClInclude Include="Laser.h" />
-    <ClInclude Include="Meteor.h" />
-    <ClInclude Include="MeteorSpawner.h" />
+    <ClInclude Include="Cone.h" />
+    <ClInclude Include="ConeSpawner.h" />
     <ClInclude Include="Score.h" />
-    <ClInclude Include="Ship.h" />
+    <ClInclude Include="Car.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\README.md" />
@@ -125,7 +125,25 @@
     <Image Include="..\..\..\Art\laser.png" />
     <Image Include="..\..\..\Art\meteor.png" />
     <Image Include="Resources\background.png" />
+    <Image Include="Resources\cone3.png" />
+    <Image Include="Resources\explosion-spritesheet.png" />
+    <Image Include="Resources\explosion01.png" />
+    <Image Include="Resources\explosion02.png" />
+    <Image Include="Resources\explosion03.png" />
+    <Image Include="Resources\explosion04.png" />
+    <Image Include="Resources\explosion05.png" />
+    <Image Include="Resources\explosion06.png" />
+    <Image Include="Resources\explosion07.png" />
+    <Image Include="Resources\explosion08.png" />
+    <Image Include="Resources\explosion09.png" />
+    <Image Include="Resources\laser.png" />
+    <Image Include="Resources\meteor.png" />
+    <Image Include="Resources\purplecar.png" />
+    <Image Include="Resources\redcar.jpg" />
+    <Image Include="Resources\redcar.png" />
+    <Image Include="Resources\roadpicture.jpg" />
     <Image Include="Resources\ship.png" />
+    <Image Include="Resources\yellowcar.png" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="Resources\boom.wav" />

@@ -1,21 +1,21 @@
-#include "Ship.h"
+#include "Car.h"
 #include "Laser.h"
 
 const float SPEED = 0.3f;
 const int FIRE_DELAY = 200;
 
-Ship::Ship()
+Car::Car()
 {
-	sprite_.setTexture(GAME.getTexture("Resources/ship.png"));
-	sprite_.setPosition(sf::Vector2f(100, 100));
+	sprite_.setTexture(GAME.getTexture("Resources/redcaredited.png"));
+	sprite_.setPosition(sf::Vector2f(340, 300));
 }
 
-void Ship::draw()
+void Car::draw()
 {
 	GAME.getRenderWindow().draw(sprite_);
 }
 
-void Ship::update(sf::Time& elapsed) {
+void Car::update(sf::Time& elapsed) {
 	sf::Vector2f pos = sprite_.getPosition();
 	float x = pos.x;
 	float y = pos.y;

@@ -1,6 +1,6 @@
 #include "GameScene.h"
-#include "Ship.h"
-#include "MeteorSpawner.h"
+#include "Car.h"
+#include "ConeSpawner.h"
 #include "Score.h"
 #include "GameOverScene.h"
 #include "GoodLuckMessage.h"
@@ -13,13 +13,13 @@ GameScene::GameScene()
 	BackgroundPtr background1 = std::make_shared<Background>(sf::Vector2f(0.0f, 0.0f));
 	addGameObject(background1);
 
-	BackgroundPtr background2 = std::make_shared<Background>(sf::Vector2f(WINDOW_WIDTH, 0.0f));
+	BackgroundPtr background2 = std::make_shared<Background>(sf::Vector2f(0.0f, 0.0f - WINDOW_HEIGHT));
 	addGameObject(background2);
 
-	ShipPtr ship = std::make_shared<Ship>();
+	CarPtr ship = std::make_shared<Car>();
 	addGameObject(ship);
 
-	MeteorSpawnerPtr meteorSpawner = std::make_shared<MeteorSpawner>();
+	ConeSpawnerPtr meteorSpawner = std::make_shared<ConeSpawner>();
 	addGameObject(meteorSpawner);
 
 	ScorePtr score = std::make_shared<Score>(sf::Vector2f(10.0f, 10.0f));
